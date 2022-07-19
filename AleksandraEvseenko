@@ -1,0 +1,25 @@
+Задача 1 
+
+SELECT * FROM Employee WHERE like employee_name 'A%' ;
+
+ Задача 2 
+
+SELECT * FROM Work INNER JOIN Employee ON WORK.id_employee = Employee.id WHERE WORK_type = 'remote' AND exployee_yearbirth BETWEEN '1997' AND '2007' ; 
+
+ Задача 3 
+
+UPDATE Users SET Users_name="Мохой-Надь" WHERE Users_name="Корш-Кукоцка" ;
+
+Задача 4
+
+SELECT avg(salary_rub) AS AverageSalary FROM Salary WHERE date BETWEEN '01.2021' AND '11.2021' ;
+
+ Задача 5
+
+SELECT salary_usd FROM Salary WHERE salary_rub >5000 ;
+
+ Задача 6
+SELECT * FROM Country INNER JOIN City ON COUNTRY.ID = CITY.COUNTRY_ID WHERE city_name LIKE 'A%' ;
+
+ Задача 7
+SELECT id FROM Country WHERE %(id,2)=1 ; 
