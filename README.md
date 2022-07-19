@@ -2,7 +2,7 @@
 Домашнее задание по SQL
 
 1. Valentin_Zhurik
-2.
+2. Alena Tsatsokha
 3.
 4.
 5.
