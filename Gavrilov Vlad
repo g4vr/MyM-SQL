@@ -1,0 +1,13 @@
+1. Даны Таблицы Work с колонками (id, id_employee, type) и таблица Employee с колонками (id, name, adress, yearbirth)
+Задача 1: SELECT name FROM Employee WHERE name LIKE 'A%';
+Задача 2: SELECT name FROM Work INNER JOIN Employee ON Work.id_employee = Employee.id WHERE type IN ('remote') AND yearbirth BETWEEN 1997 AND 2007;
+
+2. Таблица Users с колонками (id, name, last_name)
+Задача 3: UPDATE User SET last_name = 'Мохой-Надь' WHERE last_name = 'Корш-Кукоцка';
+
+3. Таблица Salary (id_user, salary_rub, date (mm-yyyy))
+Задача 4: SELECT AVG(salary_rub) FROM Salary WHERE date >= '01-2021' AND date <= '11-2021';
+Задача 5: SELECT id_user, dollar(salary_rub/2,5) AS salary_dollar FROM Salary WHERE salary_rub > 5000;
+
+4. Таблицы Country (id, name) and City (id, name, country_id)
+Задача 6: SELECT Country.name AS name_Country, City.name AS name_City FROM Country INNER JOIN City on Country.id = City.country_id WHERE name_City LIKE 'A%';
