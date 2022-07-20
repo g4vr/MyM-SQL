@@ -6,7 +6,7 @@
 3. AleksandraEvseenko
 4. Slava_Yanousky
 5. Victoria Hramelya
-6.
+6. Gavrilov Vlad
 7.
 8.
 9.
