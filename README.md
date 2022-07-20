@@ -7,7 +7,7 @@
 4. Slava_Yanousky
 5. Victoria Hramelya
 6. Gavrilov Vlad
-7.
+7. Konstantsin B.
 8.
 9.
 10.
