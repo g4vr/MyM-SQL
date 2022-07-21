@@ -8,7 +8,7 @@
 5. Victoria Hramelya
 6. Gavrilov Vlad
 7. Konstantsin B.
-8.
+8. Aleksei_Shparlo
 9.
 10.
 11.
