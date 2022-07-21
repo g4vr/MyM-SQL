@@ -33,7 +33,7 @@ SELECT salary_rub*2.5 AS salary_usd FROM Salary WHERE salary_rub > 5000;
 4. Таблицы Country (id, name) and City (id, name, country_id)
 Задача 6: Вывести все страны и соответствующие города, где название города начинается на А
 
-SELECT Country.name, City.name FROM Country INNER JOIN City ON Country.id = City.country_id WHERE City.name LIKE 'А%';
+SELECT Country.name, City.name FROM Country LEFT JOIN City ON Country.id = City.country_id WHERE City.name LIKE 'А%';
 
 СУПЕР ПРОДВИНУТЫЙ УРОВЕНЬ
 Задача 7: Выбрать записи с нечётными id из ТАБЛИЦЫ
