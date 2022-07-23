@@ -1,13 +1,22 @@
 1. Даны Таблицы Work с колонками (id, id_employee, type) и таблица Employee с колонками (id, name, adress, yearbirth)
-Задача 1: SELECT * FROM Employee WHERE name LIKE 'A%';
-Задача 2: SELECT * FROM Employee INNER JOIN Work ON Employee.id = Work.id_employee WHERE Work.type = "remote" AND Employee.yearbirth BETWEEN '1997' AND '2007';
+Задача 1: Вывести сотрудника с именем, начинающимся на А.
+SELECT * FROM Employee WHERE name LIKE 'A%';
+Задача 2: Вывести всех сотрудников, у которых type=remote и yearbirth с 1997 по 2007.
+SELECT * FROM Employee INNER JOIN Work ON Employee.id = Work.id_employee WHERE Work.type = "remote" AND Employee.yearbirth BETWEEN '1997' AND '2007';
 
 2. Таблица Users с колонками (id, name, last_name)
-Задача 3: UPDATE Users SET last_name = 'Мохой-Надь' WHERE last_name = 'Корш-Кукоцка';
+Задача 3: Обновить юзера Корш-Кукоцка, заменить на Мохой-Надь.
+UPDATE Users SET last_name = 'Мохой-Надь' WHERE last_name = 'Корш-Кукоцка';
 
 3. Таблица Salary (id_user, salary_rub, date (mm-yyyy))
-Задача 4: SELECT AVG(salary_rub) FROM Salary WHERE date >= '01-2021' AND date <= '11-2021';
-Задача 5: SELECT id_user, dollar(salary_rub/2,5) AS salary_dollar FROM Salary WHERE salary_rub > 5000;
+Задача 4: Посчитать средний уровень зп за период с 01.2021 по 11.2021.
+SELECT AVG(salary_rub) FROM Salary WHERE date >= '01-2021' AND date <= '11-2021';
+Задача 5: Вывести зп в $ для тех юзеров, у которых зп в рублях больше 5000.
+SELECT id_user, dollar(salary_rub/2,5) AS salary_dollar FROM Salary WHERE salary_rub > 5000;
 
 4. Таблицы Country (id, name) and City (id, name, country_id)
-Задача 6: SELECT Country.name AS name_Country, City.name AS name_City FROM Country INNER JOIN City on Country.id = City.country_id WHERE name_City LIKE 'A%';
+Задача 6: Вывести все страны и соответствующие города, где название города начинается на А.
+SELECT Country.name AS name_Country, City.name AS name_City FROM Country INNER JOIN City on Country.id = City.country_id WHERE name_City LIKE 'A%';
+
+Задача 7: Выбрать записи с нечётными id из ТАБЛИЦЫ.
+SELECT * FROM Table WHERE  id % 2 != 0;
