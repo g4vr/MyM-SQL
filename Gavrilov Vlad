@@ -1,9 +1,9 @@
 1. Даны Таблицы Work с колонками (id, id_employee, type) и таблица Employee с колонками (id, name, adress, yearbirth)
-Задача 1: SELECT name FROM Employee WHERE name LIKE 'A%';
-Задача 2: SELECT name FROM Work INNER JOIN Employee ON Work.id_employee = Employee.id WHERE type IN ('remote') AND yearbirth BETWEEN 1997 AND 2007;
+Задача 1: SELECT * FROM Employee WHERE name LIKE 'A%';
+Задача 2: SELECT * FROM Employee INNER JOIN Work ON Employee.id = Work.id_employee WHERE Work.type = "remote" AND Employee.yearbirth BETWEEN '1997' AND '2007';
 
 2. Таблица Users с колонками (id, name, last_name)
-Задача 3: UPDATE User SET last_name = 'Мохой-Надь' WHERE last_name = 'Корш-Кукоцка';
+Задача 3: UPDATE Users SET last_name = 'Мохой-Надь' WHERE last_name = 'Корш-Кукоцка';
 
 3. Таблица Salary (id_user, salary_rub, date (mm-yyyy))
 Задача 4: SELECT AVG(salary_rub) FROM Salary WHERE date >= '01-2021' AND date <= '11-2021';
